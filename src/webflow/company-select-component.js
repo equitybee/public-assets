@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   const mainFunction = () => {
-    const environmentHost = window.location.host;
+    const environmentHost = window.location.host.replace(/^www\./, '');
 
     const companySearchComponents = document.getElementsByClassName('form-block-4 company-search-component w-form');
     const companySearchComponentsArray = Array.from(companySearchComponents);
